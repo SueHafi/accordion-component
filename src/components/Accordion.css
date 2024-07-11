@@ -4,6 +4,7 @@
   border-top: 2px solid rgb(4, 79, 133);
   line-height: 1;
   box-shadow: 0 0 32px rgba(0,0,0,0.1);
+  padding: 24px;
 }
 
 .accordion-header {
@@ -27,12 +28,6 @@
   color: rgb(4, 79, 133);
   font-size: 3rem;
   margin-right: auto;
-}
-
-.accordion-text {
-    font-size: 1.8rem;
-    line-break: auto;
-    line-height: 1.5;
 }
 
 .accordion-list {
