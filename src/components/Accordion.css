@@ -1,33 +1,41 @@
 .accordion-container {
   width: 700px;
-  margin: 100px auto;
+  margin: 25px auto;
   border-top: 2px solid rgb(4, 79, 133);
   line-height: 1;
   box-shadow: 0 0 32px rgba(0,0,0,0.1);
-  padding: 24px;
+  padding-bottom: 24px;
 }
 
 .accordion-header {
   display: flex;
   gap: 20px;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.accordion-num--02 {
+.accordion-num {
   color: rgb(4, 79, 133);
   font-size: 3rem;
-  margin-left: auto;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .accordion-title {
   color: rgb(4, 79, 133);
   font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .accordion-symbol {
   color: rgb(4, 79, 133);
   font-size: 3rem;
-  margin-right: auto;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .accordion-list {
@@ -46,6 +54,6 @@
 }
 
 .accordion-text-section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
 }

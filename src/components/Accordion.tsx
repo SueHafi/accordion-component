@@ -16,7 +16,7 @@ export default function Accordion({ num, title, children }: AccordionProps) {
   return (
     <div className="accordion-container">
       <header className="accordion-header">
-        <p className="accordion-num--02">{num}</p>
+        <p className="accordion-num">{num}</p>
         <h1 className="accordion-title">{title}</h1>
         <p className="accordion-symbol">&#65088;</p>
       </header>

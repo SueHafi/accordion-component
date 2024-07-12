@@ -12,7 +12,16 @@ function App() {
           considered for return.
         </AccordionText>
       </Accordion>
-      <Accordion num="02" title="Lorem ipsum dolor sit.">
+      <Accordion
+        num="02"
+        title="Can I get a partial refund if my item is damaged?"
+      >
+        <AccordionText>
+          Our policy allows for no refund on damaged items, unless it was
+          damaged during shipping.
+        </AccordionText>
+      </Accordion>
+      <Accordion num="03" title="Lorem ipsum dolor sit.">
         <AccordionText>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
           dicta expedita, ad sint distinctio assumenda non cum eaque nulla
