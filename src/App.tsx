@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordion from "./components/Accordion";
 import AccordionText from "./components/AccordionText";
+import AccordionList from "./components/AccordionList";
 
 function App() {
   return (
@@ -11,6 +12,13 @@ function App() {
           also certain criterias listed below that your item must meet to be
           considered for return.
         </AccordionText>
+        <AccordionList
+          listItems={[
+            "Product must be clean",
+            "Product must be undamaged",
+            "Product must be unused",
+          ]}
+        ></AccordionList>
       </Accordion>
       <Accordion
         num="02"
@@ -34,6 +42,7 @@ function App() {
           libero alias sequi, maiores repellat earum debitis modi! Repudiandae,
           temporibus iste?
         </AccordionText>
+        <AccordionList listItems={["Lorem ipsum dolor sit amet consectetur adipisicing elit.", "Maiores repellat earum debitis modi! Repudiandae!"]}></AccordionList>
       </Accordion>
     </>
   );
