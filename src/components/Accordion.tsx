@@ -22,7 +22,7 @@ export default function Accordion({ num, title, children }: AccordionProps) {
         >
           <span className="accordion-num">{num}</span>
           <span className="accordion-title">{title}</span>
-          <span className="accordion-symbol">&#65088;</span>
+          <img className="accordion-symbol" alt="caret down" src="/caret-down.png" />
         </button>
       </h2>
       <section className="accordion-text-section">{children}</section>
