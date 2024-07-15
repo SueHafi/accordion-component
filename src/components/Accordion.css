@@ -25,6 +25,10 @@
 
 }
 
+.hidden {
+  display: none;
+}
+
 .accordion-num {
   color: rgb(4, 79, 133);
   font-size: 3rem;
