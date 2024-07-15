@@ -1,4 +1,5 @@
-import { ReactNode, MouseEvent, useState } from "react";
+import { ReactNode, useState } from "react";
+import { getUniqueNumber } from "../utils";
 import "./Accordion.css";
 type AccordionProps = {
   num: string;
@@ -8,6 +9,7 @@ type AccordionProps = {
 
 export default function Accordion({ num, title, children }: AccordionProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [idSuffix] = useState(getUniqueNumber);
 
   function handleAccordionClick(): void {
     setIsExpanded(!isExpanded);
@@ -17,12 +19,12 @@ export default function Accordion({ num, title, children }: AccordionProps) {
     <div className="accordion-container">
       <h2 className="accordion-header">
         <button
-          id="accordion-controls"
+          id={`accordion-controls-${idSuffix}`}
           className="accordion-button"
           onClick={handleAccordionClick}
           type="button"
           aria-expanded={isExpanded}
-          aria-controls="accordion-panel"
+          aria-controls={`accordion-panel-${idSuffix}`}
         >
           <span className="accordion-num">{num}</span>
           <span className="accordion-title">{title}</span>
@@ -34,7 +36,7 @@ export default function Accordion({ num, title, children }: AccordionProps) {
         </button>
       </h2>
       <section
-        id="accordion-panel"
+        id={`accordion-panel-${idSuffix}`}
         className={`${
           isExpanded
             ? "accordion-text-section"
